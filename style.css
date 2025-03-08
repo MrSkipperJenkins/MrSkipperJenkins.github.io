@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: flex-box;
     font-family: Manrope, Helvetica, sans-serif;
 }
 
@@ -12,13 +12,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 50vh;
-    width: 100vh;
+    width: flex;
     flex-direction: column;
 }
 
 h1 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 00;
     margin-bottom: 1rem;
 }
 
@@ -26,4 +26,10 @@ p {
     background-image: linear-gradient(90deg, #FFFFFF, #b0b5ff);
     color: transparent;
     background-clip: text;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
