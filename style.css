@@ -2,21 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: Manrope, Helvetica, sans-serif;
 }
 
 body {
-    background-color: #1E1E2E;
+    background-color: #151624;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
+    width: 100vh;
     flex-direction: column;
 }
 
 h1 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1rem;
+}
+
+p {
+    background-image: linear-gradient(90deg, #FFFFFF, #b0b5ff);
+    color: transparent;
+    background-clip: text;
 }
