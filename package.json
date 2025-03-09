@@ -1,0 +1,25 @@
+{
+  "name": "mrskipperjenkins.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrSkipperJenkins/MrSkipperJenkins.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrSkipperJenkins/MrSkipperJenkins.github.io/issues"
+  },
+  "homepage": "https://github.com/MrSkipperJenkins/MrSkipperJenkins.github.io#readme",
+  "description": "",
+  "devDependencies": {
+    "vite": "^6.2.1"
+  }
+}

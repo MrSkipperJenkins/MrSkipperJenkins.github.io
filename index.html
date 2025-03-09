@@ -5,11 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crewer - Schedule Productions</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 </head>
 <body>
-    <div>
-        <h1>Crewer</h1>
-        <p>Real-time scheduling, crew management, and resource allocation.</p>
+    <div class="gradient-border">
+        <div>
+            <h1>Crewer</h1>
+            <p>Real-time production scheduling, crew management, and resource allocation.</p>
+            <form id="emailForm" class="email-form">
+                <label for="email">Sign up for the waitlist:</label>
+                <div class="input-group">
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Enter your email"
+                        required
+                    >
+                    <button type="submit">Submit</button>
+                </div>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+        </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
