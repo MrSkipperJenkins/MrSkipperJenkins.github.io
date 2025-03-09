@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const emailInput = document.getElementById('email')
     const submitButton = emailForm.querySelector('button[type="submit"]')
     const buttonText = submitButton.querySelector('.button-text')
-    const validationMessage = emailForm.querySelector('.validation-message')
     const formMessage = document.getElementById('formMessage')
 
     // Initialize Supabase client
@@ -39,7 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Clear previous states
         emailInput.classList.remove('error', 'success')
-        validationMessage.textContent = ''
+        formMessage.className = 'form-message'
+        formMessage.textContent = ''
         
         if (email === '') {
             return
@@ -47,7 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!validateEmail(email)) {
             emailInput.classList.add('error')
-            validationMessage.textContent = 'Please enter a valid email address'
+            formMessage.textContent = 'Please enter a valid email address'
+            formMessage.classList.add('error')
         } else {
             emailInput.classList.add('success')
         }
@@ -62,13 +63,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // Validate email
         if (!validateEmail(email)) {
             emailInput.classList.add('error')
-            validationMessage.textContent = 'Please enter a valid email address'
+            formMessage.textContent = 'Please enter a valid email address'
+            formMessage.classList.add('error')
             return
         }
 
         try {
             // Clear previous messages and set loading state
             formMessage.className = 'form-message'
+            formMessage.textContent = ''
             submitButton.classList.add('loading')
             submitButton.disabled = true
             buttonText.textContent = 'Submitting...'

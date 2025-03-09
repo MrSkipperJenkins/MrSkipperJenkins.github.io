@@ -15,21 +15,22 @@
             <form id="emailForm" class="email-form" novalidate>
                 <label for="email">Sign up for the waitlist:</label>
                 <div class="input-group">
-                    <div class="input-wrapper">
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            placeholder="Enter your email"
-                            required
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                        >
-                        <span class="validation-message"></span>
-                    </div>
-                    <button type="submit">
-                        <span class="button-text">Submit</span>
-                        <span class="loading-spinner"></span>
-                    </button>
+                    <!-- <div class="input-row"> -->
+                        <!-- <div class="input-wrapper"> -->
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Enter your email"
+                                required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            >
+                        <!-- </div> -->
+                        <button type="submit">
+                            <span class="button-text">Submit</span>
+                            <span class="loading-spinner"></span>
+                        </button>
+                    <!-- </div> -->
                 </div>
                 <p id="formMessage" class="form-message"></p>
             </form>
