@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Show success message
             emailInput.classList.remove('error', 'success')
-            formMessage.textContent = 'Thank you for subscribing!'
+            formMessage.textContent = 'Got it, thanks!'
             formMessage.classList.add('success')
             emailInput.value = ''
             
